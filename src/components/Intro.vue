@@ -26,6 +26,15 @@
         background-repeat: no-repeat;
         width: 100%;
         text-align: center;
+        height: 100%;
+    }
+
+    p {
+        margin-bottom: -10px;
+    }
+
+    h1 {
+        margin-bottom: 10px;
     }
 
     .profile-photo {
@@ -34,6 +43,11 @@
         border-radius: 50%;
         object-fit: cover;
         margin: 25px 0 20px 0;
+        transition: transform 0.3s ease;
+    }
+
+    .profile-photo:hover {
+        transform: scale(1.2);
     }
     
 </style>

@@ -1,9 +1,11 @@
 <template>
-  <Header />
-  <main class="content">
-      <router-view />
-  </main>
-  <Footer />
+  <div class="app-container">
+    <Header />
+    <main class="content">
+        <router-view />
+    </main>
+    <Footer />
+  </div>
 </template>
 
 <script>
@@ -17,3 +19,21 @@ export default {
   }
 }
 </script> 
+
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  .content {
+    flex: 1;
+  }
+</style>
+
