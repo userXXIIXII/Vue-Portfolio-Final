@@ -9,7 +9,7 @@
         <router-link to="/">Accueil</router-link>
         <router-link to="/about">A Propos</router-link>
         <router-link to="/competences">Comptétences</router-link>
-        <router-link to="/projects">Projets</router-link>
+        <router-link to="/projets">Projets</router-link>
         <router-link to="/contact">Contact</router-link>
       </nav>
     </div>
@@ -32,11 +32,11 @@ header {
 }
 
 .header-container {
-  display: flex;               /* flex container */
-  align-items: center;         /* vertical alignment */
-  justify-content: space-between; /* logo left, nav right */
+  display: flex;               
+  align-items: center;         
+  justify-content: space-between; 
   height: 100%;
-  padding: 0 20px;             /* optional horizontal padding */
+  padding: 0 20px;             
 }
 
 .logo-title {
