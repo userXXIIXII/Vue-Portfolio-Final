@@ -1,39 +1,34 @@
 <template>
-<<<<<<< HEAD
   <header :style="{ backgroundImage: `url('${theme}')` }">
     <div class="header-container">
       <div class="logo-title">
         <img src="../assets/logo.png"  alt="adLogo" class="logoHeader" />
-=======
+
     <header :style="{ backgroundImage: `url(${theme})` }">
     <div class="header-container">
       <div class="logo-title">
         <img :src="logo" alt="logo" class="logoHeader" />
->>>>>>> 503e0269e3d7ed1fb46f4db828a8d9ffb8999352
+
         <h1>Mon Portfolio</h1>
       </div>
       <nav>
         <router-link to="/">Accueil</router-link>
         <router-link to="/about">A Propos</router-link>
-<<<<<<< HEAD
+
         <router-link to="/competences">Comptétences</router-link>
         <router-link to="/projects">Projets</router-link>
         <router-link to="/contact">Contact</router-link>
-=======
         <router-link to="competence">Comptétences</router-link>
         <router-link to="/projets">Projets</router-link>
         <router-link to="contact">Contact</router-link>
->>>>>>> 503e0269e3d7ed1fb46f4db828a8d9ffb8999352
       </nav>
     </div>
   </header>
 </template>
 
 <script setup>
-<<<<<<< HEAD
 
-import theme from '../assets/themeNav.jpg';
-
+import theme from '@/assets/themeNav.jpg';
 
 </script>
 
@@ -91,12 +86,8 @@ nav a.router-link-active {
   border-bottom: 2px solid lightgray;
   font-size: 1.4rem;
   transform: translateY(-5px);
-=======
-    import theme from "../assets/themeNav.jpg"; 
-    import logo from "../assets/logo.png";
-</script> 
 
-<style scoped>
+<style scoped> 
 
     header {
         background-size: cover;
@@ -190,7 +181,6 @@ nav a.router-link-active {
   nav a {
     font-size: 0.8rem;             /* smaller font for mobile */
   }
->>>>>>> 503e0269e3d7ed1fb46f4db828a8d9ffb8999352
 }
 
 
