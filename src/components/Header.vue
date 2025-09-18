@@ -2,7 +2,9 @@
   <header :style="{ backgroundImage: `url('${theme}')` }">
     <div class="header-container">
       <div class="logo-title">
-        <img src="../assets/logo.png"  alt="adLogo" class="logoHeader" />
+        <router-link to="/">
+          <img src="../assets/logo.png"  alt="adLogo" class="logoHeader" />
+        </router-link>
         <h1>Mon Portfolio</h1>
       </div>
       <nav>
