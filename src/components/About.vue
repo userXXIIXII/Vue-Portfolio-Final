@@ -18,6 +18,21 @@
                 <br>et Web Mobile</br></p>
             </div>
         </div>
+
+        <p class="bio">
+            Ayant suivi une formation intensive en développement web et web mobile, 
+            j'ai acquis une solide base de compétences couvrant les principaux
+            langages de programmation, frameworks et technologies nécessaires
+            pour concevoir, développer et déployer des applications web complètes.
+            Cette formation m'a permis de maîtriser les concepts fondamentaux
+            du développement web, notamment HTML, CSS, JavaScript,
+            ainsi que l'utilisation de frameworks tels que React, Angular 
+            et Node.js. J'ai également acquis une expérience pratique en 
+            travaillant sur des projets réels, ce qui m'a permis d'affiner
+            mes compétences techniques et de développer ma capacité à 
+            résoudre efficacement les problèmes rencontrés lors du 
+            développement d'applications web.
+        </p>
     </section>
 </template>
 
@@ -64,7 +79,7 @@
     }
 
     .bio {
-        width: 800px;
+        width: 900px;
         margin: 0 auto;
         padding: 50px;
         color: white;
