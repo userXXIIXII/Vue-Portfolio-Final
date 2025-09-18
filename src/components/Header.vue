@@ -80,4 +80,37 @@ nav a.router-link-active {
 }
 
 
+@media (max-width: 375px) {
+
+  header {
+    height: 100px;
+  }
+
+  .logoHeader {
+    height: 60px;
+    width: 60px;
+  }
+
+  .logo-title {
+    font-size: 1rem;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 0.5rem;
+  }
+
+  nav a.router-link-active {
+    font-size: 1rem;
+    transform: translateY(0);
+    border-bottom: 1px solid lightgrey;
+  }
+
+}
+
 </style>

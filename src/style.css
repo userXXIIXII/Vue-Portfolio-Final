@@ -76,16 +76,22 @@ button:focus-visible {
   flex-direction: column;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@media (max-width: 375px) {
+  html, body {
+    overflow-x: hidden; /* supprime scroll horizontal */
+    overflow-y: hidden; /* supprime scroll vertical */
   }
-  a:hover {
-    color: #747bff;
+
+  #app {
+    min-width: 100%;
+    min-height: 100%;
+    padding: 0;
   }
-  button {
-    background-color: #f9f9f9;
+
+  /* Ajustements supplémentaires pour éviter les dépassements */
+  header, .intro, .footer {
+    width: 100%;
+    overflow: hidden;
   }
 }
 
