@@ -1,2 +1,72 @@
-<template></template>
-<script scoped></script>
+<template>
+    <section :style="{backgroundImage: `url('${theme}')`}">
+        <p>Découvrez-en plus</p>
+        <h1>Qui suis-je?</h1>
+
+        <div class="section-details">
+
+            <div class="details-container">
+                <img :src="experienceIcon" alt="ecperience icon" class="icon">
+                <h3>Expériences</h3>
+                <p>3+ années <br>Full-Stack Développeur</br></p>
+            </div>
+
+            <div class="details-container">
+                <img :src="educationIcon" alt="education icon" class="icon">
+                <h3>Education</h3>
+                <p>Titre Professionnel Développeur Web
+                <br>et Web Mobile</br></p>
+            </div>
+        </div>
+    </section>
+</template>
+
+<script setup>
+    import theme from "../assets/themeBody.jpg";
+    import experienceIcon from "../assets/experience_icon.png";
+    import educationIcon from "../assets/education_icon.png";
+</script>
+
+<style scoped>
+    section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+
+    .details-container {
+        padding: 1.5rem;
+        width: 400px;
+        background-color: rgba(255, 255, 255, 0.05);
+        border-radius: 2rem;
+        border: 0.1rem solid rgb(163, 163, 163);
+        text-align: center;
+    }
+
+    .icon {
+        height: 50px;
+        width: 50px;
+    }
+
+    .section-details {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+
+    .bio {
+        width: 800px;
+        margin: 0 auto;
+        padding: 50px;
+        color: white;
+    }
+</style>
