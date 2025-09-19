@@ -3,7 +3,7 @@
         <img :src="profilePic" alt="My Photo" class="profile-photo">
         <p>Salut! Je suis</p>
         <h1>Aarin Deb</h1>
-        <h2>Front-End & Back-End Développeur</h2>
+        <h2>Développeur Front-End & Back-End</h2>
     </section>
 </template>
 
