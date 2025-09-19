@@ -27,7 +27,4 @@ const router = createRouter({
   routes
 })
 
-// Create and mount Vue app with router
-createApp(App)
-  .use(router)  // ⚡ important: tell Vue to use the router
-  .mount('#app')
+createApp(App).use(router).mount('#app')
