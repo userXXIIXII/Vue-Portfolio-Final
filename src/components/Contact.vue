@@ -119,7 +119,4 @@
         transform: scale(1.15);
     }
 
-    h1, h2{
-        text-shadow: 10px 10px 20px black;
-    }
 </style>
