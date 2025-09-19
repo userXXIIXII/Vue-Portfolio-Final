@@ -2,7 +2,9 @@
   <div class="app-container">
     <Header />
     <main class="content">
+      <transition :name="$route.meta.transition || 'fade'" mode="out-in">
         <router-view />
+      </transition>
     </main>
     <Footer />
   </div>
@@ -35,5 +37,14 @@ export default {
   .content {
     flex: 1;
   }
+
+  .fade-enter-active, .fade-leave-active {
+  transition: opacity 1s ease;
+  }
+
+  .fade-enter-from, .fade-leave-to {
+   opacity: 0;
+  }
+
 </style>
 
