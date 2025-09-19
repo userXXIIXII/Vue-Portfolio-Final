@@ -1,14 +1,14 @@
 <template>
-<div :style="{backgroundImage: `url('${theme}')`}">
+<section :style="{backgroundImage: `url('${theme}')`}">
     <p>Découvrez mes</p>
     <h1>Compétences</h1>
-    <section class="competences">
+    <div class="competences">
 
-        <div class="comp-container" :style="{backgroundImage: `url('${themeBox}')`}">
+        <div class="comp-container" :style="{ backgroundImage: `url('${themeBox}')`}" >
             <h2>Développement Front-End</h2>
             <div class="article-container">
                 <div class="comp-details">
-                    <img :src="htmlIcon" :alt="html" class="icon">
+                    <img :src="htmlIcon" alt="html" class="icon">
                     <div>
                         <h3>HTML5</h3>
                         <p>Expérimenté</p>
@@ -16,28 +16,28 @@
                 </div>
 
                 <div class="comp-details">
-                    <img :src="cssIcon.png" :alt="CSS" class="icon">
+                    <img :src="cssIcon" alt="CSS" class="icon">
                     <div>
                         <h3>CSS</h3>
                         <p>Compétent</p>
                     </div>
                 </div>
                 <div class="comp-details">
-                    <img :src="jsIcon" :alt="Javascript" class="icon">
+                    <img :src="jsIcon" alt="Javascript" class="icon">
                     <div>
                         <h3>JavaScript</h3>
                         <p>Habile</p>
                     </div>
                 </div>
                 <div class="comp-details">
-                    <img :src="vueJsIcon" :alt="VueJS" class="icon">
+                    <img :src="vueJsIcon" alt="VueJS" class="icon">
                     <div>
                         <h3>Vue JS</h3>
                         <p>Expert</p>
                     </div>
                 </div>
                 <div class="comp-details">
-                    <img :src="angularIcon" :alt="Angular" class="icon">
+                    <img :src="angularIcon" alt="Angular" class="icon">
                     <div>
                         <h3>Angular</h3>
                         <p>Doué</p>
@@ -46,50 +46,50 @@
             </div>
         </div>
 
-         <div class="comp-container" :style="{backgroundImage: `url('${themeBox}')`}">
+         <div class="comp-container" :style="{ backgroundImage: `url('${themeBox}')` }">
             <h2>Développement Back-End</h2>
-            <div class="article-container">
-                <div class="comp-details">
-                    <img :src="nodeJsIcon" :alt="NodeJs" class="icon">
+            <article class="article-container">
+                <li class="comp-details">
+                    <img :src="nodeJsIcon" alt="NodeJs" class="icon">
                     <div>
                         <h3>Node JS</h3>
                         <p>Chevronné</p>
                     </div>
-                </div>
+                </li>
 
-                <div class="comp-details">
-                    <img :src="exIcon" :alt="Express" class="icon">
+                <li class="comp-details">
+                    <img :src="exIcon" alt="Express" class="icon">
                     <div>
                         <h3>Express</h3>
                         <p>Intérmédiaire</p>
                     </div>
-                </div>
-                <div class="comp-details">
-                    <img :src="phpIcon" :alt="PHP" class="icon">
+                </li>
+                <li class="comp-details">
+                    <img :src="phpIcon" alt="PHP" class="icon">
                     <div>
                         <h3>PHP</h3>
                         <p>Solide</p>
                     </div>
-                </div>
-                <div class="comp-details">
-                    <img :src="gitIcon" :alt="gitHub" class="icon">
+                </li>
+                <li class="comp-details">
+                    <img :src="gitIcon" alt="gitHub" class="icon">
                     <div>
                         <h3>gitHub</h3>
                         <p>Avancé</p>
                     </div>
-                </div>
-                <div class="comp-details">
-                    <img :src="cIcon" :alt="C" class="icon">
+                </li>
+                <li class="comp-details">
+                    <img :src="cIcon" alt="C" class="icon">
                     <div>
                         <h3>C#</h3>
                         <p>Doué</p>
                     </div>
-                </div>
-            </div>
+                </li>
+            </article>
         </div>
     
-    </section>
-</div>
+    </div>
+</section>
 </template>
 
 <script setup>
@@ -110,45 +110,70 @@
 </script>
 
 <style scoped>
+
+    section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        background-position: center;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+    }
+
+    .competences {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+
     .comp-container {
-    border-radius: 2rem;
-    border: 0.1rem solid rgb(163, 163, 163);
-    text-align: center;
-    padding: 2rem;
-    width: 100%;
-    max-width: 500px;
-    box-sizing: border-box;
-    margin: 1rem;
-    background-size: cover;
-    background-position: center;
+        border-radius: 2rem;
+        border: 0.1rem solid white;
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        max-width: 500px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
     }
 
     .article-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    justify-items: center;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        justify-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
     }
 
     .exp-details {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    width: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+        width: 120px;
     }
 
     .icon {
-    height: 50px;
-    width: 50px;
+        height: 50px;
+        width: 50px;
     }
 
     .experience {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin: 2rem 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        margin: 2rem 0;
     }
+    
 
 </style>
