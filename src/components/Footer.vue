@@ -9,7 +9,8 @@
 
         <div class="info">
             <img :src="mailIcon" alt="Mail Icon" class="icon">
-            <a href="mailto:aarindeb2003@gmail.com" target="_blank">aarindeb2003@gmail.com</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aarindeb2003@gmail.com&su=Collaborons%20Ensemble!&body=Hello!" 
+            target="_blank">aarindeb2003@gmail.com</a>
         </div>
 
         <div class="info">
@@ -56,11 +57,16 @@
         font-size: 1rem;
         color: white;
         transition: font-size 0.3s ease, color 0.3s ease;
+        text-shadow: 5px 5px 5px black;
     }
 
     .info:hover {
         font-size: 1.4rem;
         color: lightgrey;
+        font-weight: bolder;
+    }
+
+    a:hover {
         font-weight: bolder;
     }
 </style>

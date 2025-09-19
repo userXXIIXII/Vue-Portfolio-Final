@@ -142,6 +142,7 @@
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
+        box-shadow: 10px 10px 20px black;
     }
 
     .article-container {

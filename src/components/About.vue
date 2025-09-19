@@ -67,6 +67,7 @@
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        box-shadow: 10px 10px 20px black;
     }
 
     .icon {

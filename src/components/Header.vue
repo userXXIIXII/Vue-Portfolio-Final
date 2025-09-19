@@ -51,7 +51,7 @@ header {
   height: 150px;
   width: 150px;
   margin: 0;
-  display: block;
+  filter: drop-shadow(10px 10px 10px black);
 }
 
 nav {
@@ -61,6 +61,7 @@ nav {
 
 nav a {
   display: inline-block;
+  text-shadow: 5px 5px 5px black;
   color: white;
   font-size: 1rem;
   transition: color 0.3s ease,

@@ -27,7 +27,8 @@
             </div>
 
             <div>
-                <a href="mailto:aarindeb2003@gmail.com">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aarindeb2003@gmail.com&su=Collaborons%20Ensemble!&body=Hello!"
+                target="_blank">
                     <button :style="{ backgroundImage: `url('${themeBox}')`}">Écrivez-moi pour commencer</button>
                 </a>
             </div>

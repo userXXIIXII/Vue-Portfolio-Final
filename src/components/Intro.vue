@@ -45,6 +45,7 @@
         object-fit: cover;
         margin: 25px 0 20px 0;
         transition: transform 0.3s ease;
+        box-shadow: 10px 10px 20px black;
     }
 
     .profile-photo:hover {

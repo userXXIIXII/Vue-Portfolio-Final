@@ -60,6 +60,7 @@
     .details-container {
         border: 0.1rem solid white;
         border-radius: 2rem;
+        box-shadow: 10px 10px 20px black;
 
         text-align: center;
 
@@ -94,6 +95,12 @@
     button {
         border: 0.05rem solid white;
         border-radius: 2rem;
+        transition: 0.3s ease;
+        box-shadow: 7px 7px 15px black;
+    }
+
+    button:hover {
+        transform: scale(1.10);
     }
 
     .icon {
