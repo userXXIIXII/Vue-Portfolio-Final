@@ -5,15 +5,15 @@
 
         <div class="section-details">
 
-            <div class="details-container">
+            <div :style="{backgroundImage: `url('${themeBox}')`}" class="details-container">
                 <img :src="experienceIcon" alt="ecperience icon" class="icon">
-                <h3>Expériences</h3>
+                <h2>Expériences</h2>
                 <p>3+ années <br>Full-Stack Développeur</br></p>
             </div>
 
-            <div class="details-container">
+            <div :style="{backgroundImage: `url('${themeBox}')`}" class="details-container">
                 <img :src="educationIcon" alt="education icon" class="icon">
-                <h3>Education</h3>
+                <h2>Education</h2>
                 <p>Titre Professionnel Développeur Web
                 <br>et Web Mobile</br></p>
             </div>
@@ -37,6 +37,7 @@
 </template>
 
 <script setup>
+    import themeBox from "../assets/themeNav.jpg"
     import theme from "../assets/themeBody.jpg";
     import experienceIcon from "../assets/experience_icon.png";
     import educationIcon from "../assets/education_icon.png";
@@ -58,15 +59,18 @@
     .details-container {
         padding: 1.5rem;
         width: 400px;
-        background-color: rgba(255, 255, 255, 0.05);
         border-radius: 2rem;
-        border: 0.1rem solid rgb(163, 163, 163);
+        border: 0.1rem solid white;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
     }
 
     .icon {
-        height: 50px;
-        width: 50px;
+        height: 60px;
+        width: 60px;
     }
 
     .section-details {

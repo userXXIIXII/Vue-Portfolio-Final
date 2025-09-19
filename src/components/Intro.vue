@@ -21,6 +21,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 1.5rem;
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
