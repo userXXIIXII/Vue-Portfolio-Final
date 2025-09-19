@@ -4,19 +4,21 @@
         <h1>Qui suis-je?</h1>
 
         <div class="section-details">
-
+            <transition name="slide" appear>
             <div :style="{backgroundImage: `url('${themeBox}')`}" class="details-container">
                 <img :src="experienceIcon" alt="ecperience icon" class="icon">
                 <h2>Expériences</h2>
                 <p>3+ années <br>Full-Stack Développeur</br></p>
             </div>
-
+            </transition>
+            <transition name="slide" appear>
             <div :style="{backgroundImage: `url('${themeBox}')`}" class="details-container">
                 <img :src="educationIcon" alt="education icon" class="icon">
                 <h2>Education</h2>
                 <p>Titre Professionnel Développeur Web
                 <br>et Web Mobile</br></p>
             </div>
+            </transition>
         </div>
 
         <p class="bio">
@@ -89,4 +91,21 @@
         padding: 50px;
         color: white;
     }
+
+        /* Animation slide depuis la gauche */
+/* Transition Slide In */
+    .slide-enter-active {
+    transition: all 0.8s ease;
+    }
+    .slide-enter-from {
+    transform: translateX(-150px);
+    opacity: 0;
+    }
+    .slide-enter-to {
+    transform: translateX(0);
+    opacity: 1;
+    }
+
+    
+
 </style>

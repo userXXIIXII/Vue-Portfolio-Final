@@ -5,6 +5,7 @@
 
         <div class="section-details">
 
+            <transition name="slide" appear>
             <div :style="{backgroundImage: `url('${themeBox}')`}" 
             class="details-container">
                 <img :src="cvIcon" alt="CV Icon" class="icon">
@@ -18,7 +19,9 @@
                     </a>
                 </div>
             </div>
+            </transition>
 
+            <transition name="slide" appear>
             <div :style="{backgroundImage: `url('${themeBox}')`}" 
             class="details-container">
                 <img :src="websiteIcon" alt="Website Icon" class="icon">
@@ -32,6 +35,7 @@
                     </a>
                 </div>
             </div>
+            </transition>
         </div>
     </section>
 </template>
@@ -107,4 +111,18 @@
         height: 150px;
         width: 150px;
     }
+
+        /* Transition Slide In */
+    .slide-enter-active {
+    transition: all 0.8s ease;
+    }
+    .slide-enter-from {
+    transform: translateX(-150px);
+    opacity: 0;
+    }
+    .slide-enter-to {
+    transform: translateX(0);
+    opacity: 1;
+    }
+
 </style>

@@ -4,6 +4,7 @@
     <h1>Compétences</h1>
     <div class="competences">
 
+        <transition name="slide" appear>
         <div class="comp-container" :style="{ backgroundImage: `url('${themeBox}')`}" >
             <h2>Développement Front-End</h2>
             <div class="article-container">
@@ -45,8 +46,10 @@
                 </div>
             </div>
         </div>
+        </transition>
 
-         <div class="comp-container" :style="{ backgroundImage: `url('${themeBox}')` }">
+        <transition name="slide" appear>
+        <div class="comp-container" :style="{ backgroundImage: `url('${themeBox}')` }">
             <h2>Développement Back-End</h2>
             <article class="article-container">
                 <li class="comp-details">
@@ -87,7 +90,7 @@
                 </li>
             </article>
         </div>
-    
+        </transition>
     </div>
 </section>
 </template>
@@ -176,5 +179,17 @@
         margin: 2rem 0;
     }
     
+        /* Transition Slide In */
+    .slide-enter-active {
+    transition: all 0.8s ease;
+    }
+    .slide-enter-from {
+    transform: translateX(-150px);
+    opacity: 0;
+    }
+    .slide-enter-to {
+    transform: translateX(0);
+    opacity: 1;
+    }
 
 </style>
