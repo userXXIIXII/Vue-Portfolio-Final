@@ -27,7 +27,7 @@
                     <a href="https://github.com/userXXIIXII/Vue-Portfolio-Final" target="_blank">
                         <button>GitHub</button>
                     </a>
-                    <a href="https://userxxiixii.github.io/CV-CEF/" target="_blank">
+                    <a href="" target="_blank">
                         <button>Démo</button>
                     </a>
                 </div>
@@ -37,7 +37,7 @@
 </template>
 
 <script setup>
-    import theme from "..//assets/themeBody.jpg"
+    import theme from "..//assets/themeBody2.jpg"
     import themeBox from "..//assets/themeNav.jpg";
     import cvIcon from "../assets/cv-icon.png";
     import websiteIcon from "..//assets/website-icon.png";
@@ -52,6 +52,7 @@
 
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
         height: 100%;
     }

@@ -38,7 +38,7 @@
 
 <script setup>
     import themeBox from "../assets/themeNav.jpg"
-    import theme from "../assets/themeBody.jpg";
+    import theme from "../assets/themeBody2.jpg";
     import experienceIcon from "../assets/experience_icon.png";
     import educationIcon from "../assets/education_icon.png";
 </script>
@@ -52,6 +52,7 @@
         align-items: center;
         background-position: center;
         background-repeat: no-repeat;
+        background-size: cover;
         width: 100%;
         height: 100%;
     }
